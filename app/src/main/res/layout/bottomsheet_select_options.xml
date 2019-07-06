@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/varela_round"
+        android:text="Select options"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/open_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/varela_round"
+        android:text="Open Profile"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/varela_round"
+        android:text="Send Message"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "316536786192",
+    "firebase_url": "https://zyango-5f132.firebaseio.com",
+    "project_id": "zyango-5f132",
+    "storage_bucket": "zyango-5f132.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316536786192:android:fde8e6bd43b5d285",
+        "android_client_info": {
+          "package_name": "com.a.zyango"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316536786192-s9s96l3ckgj41rppd4cmbba7i017clb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a.zyango",
+            "certificate_hash": "bfa7bde4bbcbfb66e4932ccbec6c462b5d28ed85"
+          }
+        },
+        {
+          "client_id": "316536786192-bvhev6otqmj2f79an914jkphd08l53ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOYFEl7zWmGmOjgAh3xYcawHJqsWB-khs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316536786192-bvhev6otqmj2f79an914jkphd08l53ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

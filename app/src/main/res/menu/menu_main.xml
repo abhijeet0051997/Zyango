@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/all_users"
+        android:title="All users"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24px"
+        android:title="search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/log_out"
+        android:title="Log out"
+        app:showAsAction="never" />
+
+</menu>

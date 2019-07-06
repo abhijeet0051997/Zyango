@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:id="@+id/startPageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background_overlay"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/chat_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gloria_hallelujah"
+            android:text="Zyango"
+            android:textColor="@color/colorWhite"
+            android:textSize="48sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alreadyAccount"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:elevation="20dp"
+            android:fontFamily="@font/varela_round"
+            android:text="ALREADY HAVE A ACCOUNT ?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            app:backgroundTint="@color/colorWhite" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newAccont"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:elevation="20dp"
+            android:fontFamily="@font/varela_round"
+            android:text="NEED A NEW ACCOUNT ?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></FrameLayout>
+</LinearLayout>

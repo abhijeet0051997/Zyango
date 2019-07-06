@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/varela_round"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bottomsheet_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/varela_round"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bottom_sheet_cancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/varela_round"
+            android:text="cancel"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bottom_sheet_save"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/varela_round"
+            android:text="SAVE" />
+    </LinearLayout>
+</LinearLayout>

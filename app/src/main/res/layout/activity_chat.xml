@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:background="@color/colorLightGrey"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ToolbarTheme"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/circular_thumb_image"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/avataar"
+                        app:civ_border_width="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varela_round"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22sp"
+                            tools:text="Abhijeet Pradhan" />
+
+                        <TextView
+                            android:id="@+id/lastSeen_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/varela_round"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            tools:text="last seen" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/message_Recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"></androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/colorLightGrey"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@drawable/text_layout"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_add_circle_24px" />
+
+            <EditText
+                android:id="@+id/write_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="8"
+                android:background="@android:color/transparent"
+                android:hint="Write a message" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_insert_emoticon_24px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/send_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/ic_baseline_send" />
+    </LinearLayout>
+</FrameLayout>
